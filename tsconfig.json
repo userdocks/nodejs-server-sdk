@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["ES2017", "ES7", "ES6"],
+    "module": "commonjs",
+    "rootDir": "./src",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "./node_modules",
+    "./test",
+    "./dist",
+    "**/__mocks__/*",
+    "**/__fixtures__/*"
+  ]
+}

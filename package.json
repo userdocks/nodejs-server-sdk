@@ -1,0 +1,45 @@
+{
+  "name": "@userdocks/nodejs-server-sdk",
+  "version": "0.1.0",
+  "description": "The Node.js server SDK for userdocks. Verify access and id tokens on your server.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "private": false,
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "test": "jest --coverage",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cleanup": "rm -rf ./node_modules && rm -rf ./dist && npm i",
+    "prepublishOnly": "npm run cleanup && npm test && npm run build"
+  },
+  "author": "userdocks",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/userdocks/nodejs-server-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/userdocks/nodejs-server-sdk/issues"
+  },
+  "homepage": "https://github.com/userdocks/nodejs-server-sdk",
+  "keywords": [
+    "userdocks",
+    "server",
+    "sdk"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5"
+  }
+}
