@@ -117,7 +117,7 @@ To use this module with typescript and with npm link add the follwing to your ts
 {
   "compilerOptions": {
     "paths": {
-      @userdocks/nodejs-server-sdk": [
+      "@userdocks/nodejs-server-sdk": [
         "./node_modules/@userdocks/nodejs-server-sdk"
       ]
     }
