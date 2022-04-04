@@ -2,8 +2,10 @@
 import https from 'https';
 import http from 'http';
 import { URL } from 'url';
+
 import { IBody, IOptions, IResponse } from '../types';
 import { defaultOptions } from './defaultOptions';
+import checkHttps from './checkHttps';
 
 const requestPublicKey = async (options: IOptions): Promise<IResponse<IBody>> =>
   new Promise((resolve, reject) => {
@@ -12,7 +14,7 @@ const requestPublicKey = async (options: IOptions): Promise<IResponse<IBody>> =>
         (defaultOptions.authServer?.apiUri as string),
     );
 
-    const isHTTPS = url.protocol === 'https';
+    const isHTTPS = checkHttps(url);
     const requestSuite = isHTTPS ? https : http;
 
     const request = requestSuite.request(
