@@ -1,3 +1,7 @@
+0.2.1 - February, 11 2023
+
+* a4244b5 Fix: missing authorization header (aichbauer)
+
 0.2.0 - April, 04 2022
 
 * 9fb8aaf Fix: check if https: (aichbauer)
