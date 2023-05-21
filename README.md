@@ -1,7 +1,7 @@
 # **@userdocks/nodejs-server-sdk**
 
 ![npm](https://img.shields.io/npm/v/@userdocks/nodejs-server-sdk?style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/userdocks/nodejs-server-sdk/build?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/userdocks/nodejs-server-sdk/ci.yml?style=flat-square)
 ![Coveralls branch](https://img.shields.io/coveralls/github/userdocks/nodejs-server-sdk/main?style=flat-square)
 ![NPM](https://img.shields.io/npm/l/@userdocks/nodejs-server-sdk?style=flat-square)
 
