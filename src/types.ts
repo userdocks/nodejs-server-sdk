@@ -82,6 +82,9 @@ export interface IBody {
   data?: {
     publicKey: string;
   };
+  items?: {
+    value?: string;
+  }[];
   error?: {
     message: string;
   };

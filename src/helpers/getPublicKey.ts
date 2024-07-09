@@ -9,7 +9,7 @@ const getPublicKey = async (options: IOptions): Promise<string> => {
   try {
     const res = await requestPublicKey(options);
     /* istanbul ignore next */
-    return res?.body?.data?.publicKey || '';
+    return res?.body?.data?.publicKey || res?.body?.items?.[0]?.value || '';
   } catch (err) {
     throw new Error('Could not fetch publicKey!');
   }
