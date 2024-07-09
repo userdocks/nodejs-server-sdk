@@ -1,3 +1,8 @@
+0.3.0 - July, 09 2024
+
+* ca26fbe Feat: upgrade to new userdocks version with backwards compatibility (aichbauer)
+* 6bbf493 Docs: update build badge url (aichbauer)
+
 0.2.1 - February, 11 2023
 
 * a4244b5 Fix: missing authorization header (aichbauer)
